@@ -1,0 +1,88 @@
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container div {
+    margin: 20px;
+    text-align: center;
+}
+
+.container img {
+    height: 300px; 
+    width: 400px;
+    border-radius: 10px;
+}
+
+.container p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#placesDetails {
+    border: 1px solid black;/* Add border around details container */
+    padding: 10px;
+    margin-top: 10px;
+}
+#imageContainer {
+    border: 1px solid black;
+    border-radius:20px;
+}
+
+#imageContainer.showDetails {
+    border-color: #333; /* Change the border color when details are shown */
+}
+#placesDetails.show {
+    display: block;
+}
+#placesDetails {
+    display: none;
+}
+/* Styles for the header */
+header {
+    position: fixed; /* Fixed position to keep it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Padding for the top and bottom */
+    z-index: 100; /* Ensure it's above other content */
+    text-align: center; /* Center-align the text */
+}
+
+header h1 {
+    margin: 0;
+    color: #fff; /* White color for the text */
+}
+
+/* Styles for the navigation links */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%; /* Align to the vertical center of the header */
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+nav ul li {
+    display: inline; /* Display the list items inline */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+nav ul li a {
+    color: #fff; /* White color for the links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold font weight */
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+.content {
+    margin-top: 80px; /* Adjust margin to prevent content from being hidden behind the fixed header */
+    /* Other styles for your content */
+}

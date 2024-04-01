@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('src/india1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    background-color:#fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="register">
+        <form onsubmit="registerUser(event)">
+            <h2>Register Here</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" required> <br> <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required> <br> <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" required> <br> <br>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Already registered? <a href="login.html">Login</a></p>
+    </div>
+    <script>
+        function registerUser(event) {
+            event.preventDefault(); // Prevent form submission
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+
+            // Store registration data in local storage
+            localStorage.setItem("isRegistered", "true");
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+            localStorage.setItem("email", email);
+
+            alert("Registration successful! Please login.");
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    </script>
+</body>
+</html>

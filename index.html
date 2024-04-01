@@ -1,0 +1,804 @@
+cd<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Places in India</h1>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="imageContainer">
+            <img src="src/andaman.webp" alt="NotFound" onclick="showPlaces('Andaman',this)">
+            <p>Andaman and Nicobar Islands</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/andhra-pradesh.jpg" alt="NotFound" onclick="showPlaces('AndhraPradesh',this)">
+            <p>Andhra-Pradesh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/Arunachal-Pradesh.webp" alt="NotFound" onclick="showPlaces('ArunachalPradesh',this)">
+            <p>Arunachal-Pradesh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/Assam.jpg" alt="NotFound" onclick="showPlaces('Assam',this)">
+            <p>Assam</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/bihar.jpg" alt="NotFound" onclick="showPlaces('Bihar',this)">
+            <p>Bihar</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/chandigarh.jpg" alt="NotFound" onclick="showPlaces('Chandigarh',this)">
+            <p>Chandigarh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/chattisgarh.jpg" alt="NotFound" onclick="showPlaces('Chhattisgarh',this)">
+            <p>Chattisgarh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/dadra.jpg" alt="NotFound" onclick="showPlaces('Dadra Nagar Haveli',this)">
+            <p>Dadra Nagar Haveli</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/delhi.webp" alt="NotFound" onclick="showPlaces('Delhi',this)">
+            <p>Delhi</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/goa.jpg" alt="NotFound" onclick="showPlaces('Goa',this)">
+            <p>Goa</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/gujarath.jpg" alt="NotFound" onclick="showPlaces('Gujarat',this)">
+            <p>Gujarath</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/haryana.jpg" alt="NotFound" onclick="showPlaces('Haryana',this)">
+            <p>Haryana</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/himachal-pradesh.webp" alt="NotFound" onclick="showPlaces('HimachalPradesh',this)">
+            <p>Himachal-Pradesh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/jammu.jpg" alt="NotFound" onclick="showPlaces('Jammu&Kashmir',this)">
+            <p>Jammu and Kashmir</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/jharkhand.jpg" alt="NotFound" onclick="showPlaces('Jharkhand',this)">
+            <p>Jharkhand</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/karnataka.jpg" alt="NotFound" onclick="showPlaces('Karnataka',this)">
+            <p>Karnataka</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/kerala.jpg" alt="NotFound" onclick="showPlaces('Kerala',this)">
+            <p>Kerala</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/ladhak.jpg" alt="NotFound" onclick="showPlaces('Ladhak',this)">
+            <p>Ladhak</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/lakshadweep.jpg" alt="NotFound" onclick="showPlaces('Lakshadweep',this)">
+            <p>Lakshadweep</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/madhya_pradesh.jpg" alt="NotFound" onclick="showPlaces('MadhyaPradesh',this)">
+            <p>Madhya Pradesh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/maharastra.jpg" alt="NotFound" onclick="showPlaces('Maharashtra',this)">
+            <p>Maharastra</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/manipur.webp" alt="NotFound" onclick="showPlaces('Manipur',this)">
+            <p>Manipur</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/meghalaya.jpg" alt="NotFound" onclick="showPlaces('Meghalaya',this)">
+            <p>Meghalaya</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/Mizoram.jpg" alt="NotFound" onclick="showPlaces('Mizoram',this)">
+            <p>Mizoram</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/nagaland.jpg" alt="NotFound" onclick="showPlaces('Nagaland',this)">
+            <p>Nagaland</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/Odisha.jpg" alt="NotFound" onclick="showPlaces('Odisha',this)">
+            <p>Odisha</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/puducherry.jpg" alt="NotFound" onclick="showPlaces('Puducherry',this)">
+            <p>Puducherry</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/Punjab.jpg" alt="NotFound" onclick="showPlaces('Punjab',this)">
+            <p>Punjab</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/rajasthan.jpg" alt="NotFound" onclick="showPlaces('Rajasthan',this)">
+            <p>Rajasthan</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/sikkim.jpg" alt="NotFound" onclick="showPlaces('Sikkim',this)">
+            <p>Sikkim</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/tamilnadu.jpg" alt="NotFound" onclick="showPlaces('TamilNadu',this)">
+            <p>Tamil Nadu</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/Telangana.jpg" alt="NotFound" onclick="showPlaces('Telangana',this)">
+            <p>Telangana</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/tripura.jpg" alt="NotFound" onclick="showPlaces('Tripura',this)">
+            <p>Tripura</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/uttarakhand.jpg" alt="NotFound" onclick="showPlaces('Uttarkhand',this)">
+            <p>Uttarkhand</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/uttarpradesh.jpg" alt="NotFound" onclick="showPlaces('Uttarpradesh',this)">
+            <p>Uttarpradesh</p>
+        </div>
+        <div id="imageContainer">
+            <img src="src/west-bengal.jpg" alt="NotFound" onclick="showPlaces('WestBengal',this)">
+            <p>WestBengal</p>
+        </div>
+
+
+        <div id="placesDetails" style="display: none;">
+            <h2 id="placeTitle"></h2>
+            <ul id="placesList"></ul>
+        </div>
+    </div>
+    <script>
+        function showPlaces(placeName, clickedElement) {
+            
+            var imageContainer = clickedElement.parentNode; // Accessing parent container of the clicked image
+
+            var placesDetails = document.getElementById("placesDetails");
+            var placeTitle = document.getElementById("placeTitle");
+            var placesList = document.getElementById("placesList");
+
+            // Clear any previous list items
+            placesList.innerHTML = "";
+            // Define details for different places
+            var details = {
+                "Andaman": ["Cellular Jail", "Elephant Beach", "Radhanagar Beach","Limestone Cave","Port Blair"],
+                "AndhraPradesh": ["Tirupati Balaji Temple", "Amaravati","Suryalanka Beach",,"Yaganti Temple","Kurnool"],
+                "ArunachalPradesh": ["Tawang Monastery", "Golden Pagoda", "Namdapha National Park", "Sela Pass", "Parshuram Kund"],
+                "Assam": ["Kamakhya Temple", "Sualkuchi", "Umananda Island","Kakochang Waterfall","Guwahati"],
+                "Bihar": ["Mahabodhi Temple", "Bodhi Tree", "Nalanda University", "Patna Sahib","Bodh Gaya"],
+                "Chandigarh": ["Rock Garden", "Rose Garden", "Sukhna Lake", "Elante Mall", "Open Hand Monument"],
+                "Chhattisgarh": ["Chitrakote Waterfalls", "Tirathgarh Waterfalls", "Bhoramdeo Temple", "Kanger Valley National Park", "Sirpur"],
+                "Dadra Nagar Haveli": ["Silvassa", "Vanganga Lake Garden", "Hirwa Van Garden", "Island Garden Dadra Park","Butterfly Park"],
+                "Delhi": ["Red Fort", "Jama Masjid", "Swaminarayan Akshardham", "Humayun's Tomb","India Gate","Lotus temple"],
+                "Goa": ["Baga Beach", "Basilica of Bom Jesus", "Dudhsagar Falls", "Fort Aguada","Betalbatim beach"],
+                "Gujarat": ["Sabarmati Ashram", "Statue of Unity", "Ahmedabad", "Rann of Kutch","Saputara"],
+                "Haryana": ["Sultanpur National Park", "Kurukshetra", "Surajkund", "Yadavindra Gardens", "Brahma Sarovar"],
+                "HimachalPradesh": ["Shimla", "Manali", "Dharamshala", "Kullu","Chail","Hadimba Devi Temple",],
+                "Jammu&Kashmir": ["Srinagar", "Gulmarg", "Pahalgam", "Leh-Ladakh", "Vaishno Devi Temple"],
+                "Jharkhand": ["Betla National Park", "Jubilee Park", "Baidyanath Dham", "Hundru Falls", "Deoghar"],
+                "Karnataka": ["Bangalore", "Mysore", "Coorg", "Hampi", "Gokarna"],
+                "Kerala": ["Munnar", "Alleppey", "Kochi", "Thekkady","Sree Padmanabhaswamy Temple"],
+                "Ladhak":["Pangong Lake","Lamayuru","Zanskar Valley","Kargil","Khardung La"],
+                "Lakshadweep": ["Agatti Island", "Bangaram Island", "Kavaratti Island", "Minicoy Island", "Kadmat Island"],
+                "MadhyaPradesh": ["Khajuraho Temples", "Gwalior Fort", "Jabalpur","Omkareshwar Jyotirlinga","Ujjain"],
+                "Maharashtra": ["Mumbai", "Pune", "Aurangabad", "Nashik", "Mahabaleshwar"],
+                "Manipur": ["Loktak Lake", "Kangla Fort", "Imphal", "Khongjom War Memorial", "Thalon Cave"],
+                "Meghalaya": ["Shillong", "Cherrapunji", "Mawlynnong", "Dawki", "Umiam Lake","Kynrem falls"],
+                "Mizoram": ["Champhai", "Reiek", "Lunglei","Vantawng Falls","Tam Dil"],
+                "Nagaland": ["Kohima", "Dimapur", "Dzukou Valley", "Touphema Village", "Kohima War Cemetery"],
+                "Odisha": ["Puri", "Konark Sun Temple", "Bhubaneswar", "Chilika Lake", "Raghurajpur Artist Village"],
+                "Puducherry": ["Auroville", "Paradise Beach", "Arikamedu", "Promenade Beach", "Basilica of the Sacred Heart of Jesus"],
+                "Punjab": ["Golden Temple", "Jallianwala Bagh", "Wagah Border", "Anandpur Sahib","Mohali"],
+                "Rajasthan": ["Jaipur", "Udaipur", "Jaisalmer Fort", "Ajmer","Kumbhalgarh Fort"],
+                "Sikkim": ["Gangtok", "Tsomgo Lake", "Nathu La Pass", "Rumtek Monastery", "Pelling"],
+                "TamilNadu": ["Chennai", "Madurai", "Coimbatore", "Ooty", "Kanyakumari"],
+                "Telangana" :["Charminar","Birla Mandir","Sri Chilkur Balaji Temple","Salar Jang Museum","Golconda"],
+                "Tripura":["Unakoti","Neer Mahal Palace","Ujjayanta Palace","Tripura Sundari Temple","Jampui Hills"],
+                "Uttarkhand":["Dehradun","Nainital","Rishikesh","Haridwar","Kedarath"],
+                "Uttarpradesh":["Agra","Fatehpur Sikri","Varanasi","Mathura","Vrindavan"],
+                "WestBengal":["Kolkata","Darjeeling","Shantiniketan","Kalimpong","Sunderbans"]
+            };
+
+            if (details.hasOwnProperty(placeName)) {
+    // Replace the content of imageContainer with the details
+    imageContainer.innerHTML = "<h2 style='text-decoration: underline;'>Visiting Places in " + placeName + "</h2><ul>";
+
+    details[placeName].forEach(function(detail) {
+        var listItem = document.createElement("li");
+        var anchor = document.createElement("a");
+        var detailLink = ""; // Initialize detail link variable
+
+        // Set the link for each detail based on its name
+        switch (detail) {
+            case "Cellular Jail":
+                detailLink = "https://en.wikipedia.org/wiki/Cellular_Jail";
+                break;
+            case "Elephant Beach":
+                detailLink ="https://www.eternalandamans.com/havelock-island/elephant-beach";
+                break;
+            case "Radhanagar Beach":
+                detailLink ="https://www.eternalandamans.com/havelock-island/radhanagar-beach";
+                break;
+            case "Limestone Cave":
+                detailLink ="https://www.go2andaman.com/visit/limestone-caves-baratang/";
+                break;
+            case "Port Blair":
+                detailLink ="https://en.wikipedia.org/wiki/Port_Blair";
+                break;
+            case "Tirupati Balaji Temple":
+                detailLink = "https://en.wikipedia.org/wiki/Tirupati";
+                break;
+            case "Amaravati":
+                detailLink="https://en.wikipedia.org/wiki/Amaravati";
+                break;
+            case "Suryalanka Beach":
+                detailLink ="https://www.makemytrip.com/tripideas/attractions/suryalanka-beach";
+                break;
+            case "Yaganti Temple":
+                detailLink ="https://en.wikipedia.org/wiki/Yaganti_temple";
+                break;
+            case "Kurnool":
+                detailLink ="https://kurnool.ap.gov.in/";  
+                break;
+            case "Tawang Monastery":
+                detailLink ="https://en.wikipedia.org/wiki/Tawang_Monastery";
+                break;
+            case "Golden Pagoda":
+                detailLink ="https://en.wikipedia.org/wiki/Golden_Pagoda,_Namsai";
+                break;
+            case "Namdapha National Park":
+                detailLink ="https://en.wikipedia.org/wiki/Namdapha_National_Park";
+                break;
+            case "Sela Pass":
+                detailLink="https://en.wikipedia.org/wiki/Sela_Pass";
+                break;
+            case "Parshuram Kund":
+                detailLink="https://en.wikipedia.org/wiki/Parshuram_Kund";
+                break;
+            case "Kamakhya Temple":
+                detailLink ="https://en.wikipedia.org/wiki/Kamakhya_Temple";
+                break;
+            case "Sualkuchi":
+                detailLink ="https://en.wikipedia.org/wiki/Sualkuchi";
+                break;
+            case "Umananda Island":
+                detailLink ="https://en.wikipedia.org/wiki/Umananda_Island";
+                break;
+            case "Kakochang Waterfall": 
+                detailLink="https://www.kaziranganationalpark-india.com/kakochang-waterfall.html";
+                break;
+            case "Guwahati":
+                detailLink="https://en.wikipedia.org/wiki/Guwahati";
+                break;
+            case "Mahabodhi Temple":
+                detailLink="https://whc.unesco.org/en/list/1056/";
+                break;
+            case "Bodhi Tree":
+                detailLink="https://en.wikipedia.org/wiki/Bodhi_Tree#:~:text=The%20Bodhi%20Tree%20(%22tree%20of,500%20BCE%20under%20this%20tree.";
+                break;
+            case "Nalanda University":
+                detailLink="https://en.wikipedia.org/wiki/Nalanda_University";
+                break;
+            case "Patna Sahib": 
+                detailLink="https://en.wikipedia.org/wiki/Takht_Sri_Patna_Sahib";
+                break;
+            case "Bodh Gaya":
+                detailLink ="https://en.wikipedia.org/wiki/Bodh_Gaya";
+                break;
+            case "Rock Garden":
+                detailLink="https://en.wikipedia.org/wiki/Rock_Garden_of_Chandigarh";
+                break;
+            case "Rose Garden": 
+                detailLink="https://en.wikipedia.org/wiki/Zakir_Hussain_Rose_Garden";
+                break;
+            case "Sukhna Lake": 
+                detailLink="https://en.wikipedia.org/wiki/Sukhna_Lake";
+                break;
+            case "Elante Mall":
+                detailLink="https://en.wikipedia.org/wiki/Elante_Mall";
+                break;
+            case "Open Hand Monument":
+                detailLink="https://en.wikipedia.org/wiki/Open_Hand_Monument";
+                break;
+            case "Chitrakote Waterfalls":
+                detailLink="https://en.wikipedia.org/wiki/Chitrakote_Falls";
+                break;
+            case "Tirathgarh Waterfalls":
+                detailLink="https://www.chhattisgarhtourism.in/tirathgarh_waterfall/";
+                break;
+            case "Bhoramdeo Temple":
+                detailLink="https://en.wikipedia.org/wiki/Bhoramdeo_Temple";
+                break;
+            case "Kanger Valley National Park":
+                detailLink="https://kangervalley.cg.nic.in/";
+                break;
+            case "Sirpur":
+                detailLink="https://www.chhattisgarhtourism.in/sirpur/#:~:text=About%20Sirpur&text=The%20town%20of%20sirpur%20has,kms%20from%20the%20capital%2C%20Raipur.";
+                break;   
+            case "Silvassa":
+                detailLink="https://en.wikipedia.org/wiki/Silvassa";
+                break;
+            case "Vanganga Lake Garden":
+                detailLink="https://dnh.gov.in/tourist-place/vanganga-lake-garden/";
+                break;
+            case "Hirwa Van Garden":
+                detailLink="https://ddd.gov.in/centers/hirwa-van-garden/";
+                break;
+            case "Island Garden Dadra Park":
+                detailLink="https://www.trip.com/travel-guide/attraction/silvassa/island-garden-dadra-park-58286336/";
+                break;
+            case "Butterfly Park":
+                detailLink="https://www.newsbharati.com/Encyc/2018/1/23/Enthral-and-depart-yourself-into-this-mesmerising-Butterfly-Park-in-Silvassa.html";
+                break;    
+            case "Red Fort":
+                detailLink="https://en.wikipedia.org/wiki/Red_Fort";
+                break;
+            case "Jama Masjid":
+                detailLink="https://en.wikipedia.org/wiki/Jama_Masjid,_Delhi";
+                break;
+            case "Swaminarayan Akshardham":
+                detailLink="https://akshardham.com/";
+                break;
+            case "Humayun's Tomb":
+                detailLink="https://whc.unesco.org/en/list/232/";
+                break;
+            case "India Gate":
+                detailLink="https://en.wikipedia.org/wiki/India_Gate";
+                break;
+            case "Lotus temple":
+                detailLink="https://en.wikipedia.org/wiki/Lotus_Temple";
+                break;
+            case "Baga Beach":
+                detailLink="https://en.wikipedia.org/wiki/Baga,_Goa";
+                break;
+            case "Basilica of Bom Jesus":
+                detailLink="https://en.wikipedia.org/wiki/Basilica_of_Bom_Jesus";
+                break;
+            case "Dudhsagar Falls":
+                detailLink="https://en.wikipedia.org/wiki/Dudhsagar_Falls";
+                break;
+            case "Fort Aguada":
+                detailLink="https://en.wikipedia.org/wiki/Fort_Aguada";
+                break;
+            case "Betalbatim beach":
+                detailLink="https://goa.app/blog/bioluminescent-beach-goa";
+                break;
+            case "Sabarmati Ashram":
+                detailLink="https://en.wikipedia.org/wiki/Sabarmati_Ashram";
+                break;
+            case "Statue of Unity":
+                detailLink="https://en.wikipedia.org/wiki/Statue_of_Unity";
+                break;
+            case "Ahmedabad":
+                detailLink="https://en.wikipedia.org/wiki/Ahmedabad";
+                break;
+            case "Rann of Kutch":
+                detailLink="https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html";
+                break;
+            case "Saputara":
+                detailLink="https://en.wikipedia.org/wiki/Saputara";
+                break;
+            case "Sultanpur National Park":
+                detailLink="https://en.wikipedia.org/wiki/Sultanpur_National_Park";
+                break;
+            case "Kurukshetra": 
+                detailLink="https://en.wikipedia.org/wiki/Kurukshetra";
+                break;
+            case "Surajkund": 
+                detailLink="https://en.wikipedia.org/wiki/Surajkund";
+                break;
+            case "Yadavindra Gardens":
+                detailLink="https://en.wikipedia.org/wiki/Yadavindra_Gardens";
+                break;
+            case "Brahma Sarovar": 
+                detailLink="https://en.wikipedia.org/wiki/Brahma_Sarovar";
+                break;
+            case "Shimla": 
+                detailLink="https://en.wikipedia.org/wiki/Shimla";
+                break;
+            case "Manali": 
+                detailLink="https://en.wikipedia.org/wiki/Manali,_Himachal_Pradesh";
+                break;
+            case "Dharamshala": 
+                detailLink="https://en.wikipedia.org/wiki/Dharamshala";
+                break;
+            case "Kullu": 
+                detailLink="https://en.wikipedia.org/wiki/Kullu";
+                break;
+            case "Chail": 
+                detailLink="https://en.wikipedia.org/wiki/Chail,_Himachal_Pradesh";
+                break;
+            case "Hadimba Devi Temple": 
+                detailLink="https://en.wikipedia.org/wiki/Hidimba_Devi_Temple";
+                break;
+            case "Srinagar": 
+                detailLink="https://en.wikipedia.org/wiki/Srinagar";
+                break;
+            case "Gulmarg": 
+                detailLink="https://en.wikipedia.org/wiki/Gulmarg";
+                break;
+            case "Pahalgam": 
+                detailLink="https://en.wikipedia.org/wiki/Pahalgam";
+                break;
+            case "Leh-Ladakh":
+                detailLink="https://en.wikipedia.org/wiki/Leh";
+                break;
+            case "Vaishno Devi Temple":
+                detailLink="https://en.wikipedia.org/wiki/Vaishno_Devi_Temple#:~:text=Vaishno%20Devi%20Temple%2C%20also%20known,mountain%20at%205%2C000%20feet%20elevation.";
+                break;
+            case "Betla National Park":
+                detailLink="https://forest.jharkhand.gov.in/en/betla-national-park";
+                break;
+            case "Jubilee Park": 
+                detailLink="https://en.wikipedia.org/wiki/Jubilee_Park,_Jamshedpur";
+                break;
+            case "Baidyanath Dham": 
+                detailLink="https://en.wikipedia.org/wiki/Baidyanath_Temple";
+                break;
+            case "Hundru Falls": 
+                detailLink="https://ranchi.nic.in/tourist-place/hundru-waterfall/";
+                break;
+            case "Deoghar":
+                detailLink="https://en.wikipedia.org/wiki/Deoghar";
+                break;
+            case "Bangalore": 
+                detailLink="https://en.wikipedia.org/wiki/Bangalore";
+                break;
+            case "Mysore": 
+                detailLink="https://en.wikipedia.org/wiki/Mysore";
+                break;
+            case "Coorg":
+                detailLink="https://www.holidify.com/places/coorg/";
+                break;
+            case "Hampi": 
+                detailLink="https://en.wikipedia.org/wiki/Hampi";
+                break;
+            case "Gokarna": 
+                detailLink="https://en.wikipedia.org/wiki/Gokarna,_Karnataka";
+                break;
+            case "Munnar": 
+                detailLink="https://en.wikipedia.org/wiki/Munnar";
+                break;
+            case "Alleppey": 
+                detailLink="https://www.makemytrip.com/tripideas/places/alleppey";
+                break;
+            case "Kochi":
+                detailLink="https://en.wikipedia.org/wiki/Kochi";
+                break;
+            case "Thekkady": 
+                detailLink="https://en.wikipedia.org/wiki/Thekkady";
+                break;
+            case "Sree Padmanabhaswamy Temple": 
+                detailLink="https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple";
+                break;
+            case "Pangong Lake":
+                detailLink="https://leh.nic.in/tourist-place/pangong/";
+                break;
+            case "Lamayuru": 
+                detailLink="https://leh.nic.in/tourist-place/lamayuru/";
+                break;
+            case "Zanskar Valley":
+                detailLink="https://en.wikipedia.org/wiki/Zanskar";
+                break;
+            case "Kargil": 
+                detailLink="https://en.wikipedia.org/wiki/Kargil";
+                break;
+            case "Khardung La":
+                detailLink="https://en.wikipedia.org/wiki/Khardung_La";
+                break;
+            case "Agatti Island": 
+                detailLink="https://en.wikipedia.org/wiki/Agatti_Island";
+                break;
+            case "Bangaram Island": 
+                detailLink="https://bangaramislandresort.in/";
+                break;
+            case "Kavaratti Island":
+                detailLink="https://en.wikipedia.org/wiki/Kavaratti";
+                break;
+            case "Minicoy Island": 
+                detailLink="https://en.wikipedia.org/wiki/Minicoy";
+                break;
+            case "Kadmat Island":
+                detailLink="https://en.wikipedia.org/wiki/Kadmat_Island";
+                break;
+            case "Khajuraho Temples": 
+                detailLink="https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments";
+                break;
+            case "Gwalior Fort": 
+                detailLink="https://en.wikipedia.org/wiki/Gwalior_Fort";
+                break;
+            case "Jabalpur": 
+                detailLink="https://en.wikipedia.org/wiki/Jabalpur";
+                break;
+            case "Omkareshwar Jyotirlinga": 
+                detailLink="https://en.wikipedia.org/wiki/Omkareshwar_Temple";
+                break;
+            case "Ujjain": 
+                detailLink="https://en.wikipedia.org/wiki/Ujjain";
+                break;
+            case "Mumbai": 
+                detailLink="https://en.wikipedia.org/wiki/Mumbai";
+                break;
+            case "Pune": 
+                detailLink="https://en.wikipedia.org/wiki/Pune";
+                break;
+            case "Aurangabad": 
+                detailLink="https://en.wikipedia.org/wiki/Aurangabad";
+                break;
+            case "Nashik":
+                detailLink="https://en.wikipedia.org/wiki/Nashik";
+                break;
+            case "Mahabaleshwar":
+                detailLink="https://en.wikipedia.org/wiki/Mahabaleshwar";
+                break;
+            case "Loktak Lake":
+                detailLink="https://en.wikipedia.org/wiki/Loktak_Lake";
+                break;
+            case "Kangla Fort":
+                detailLink="https://en.wikipedia.org/wiki/Kangla_fort";
+                break;
+            case "Imphal": 
+                detailLink="https://en.wikipedia.org/wiki/Imphal";
+                break;
+            case "Khongjom War Memorial":
+                detailLink="https://en.wikipedia.org/wiki/Khongjom_War_Memorial_Complex";
+                break;
+            case "Thalon Cave": 
+                detailLink="https://chaloghumane.com/manipur/thalon-cave-in-manipur/";
+                break;
+            case "Shillong": 
+                detailLink="https://en.wikipedia.org/wiki/Shillong";
+                break;
+            case "Cherrapunji":
+                detailLink="https://en.wikipedia.org/wiki/Cherrapunji";
+                break;
+            case "Mawlynnong": 
+                detailLink="https://en.wikipedia.org/wiki/Mawlynnong";
+                break;
+            case "Dawki":
+                detailLink="https://en.wikipedia.org/wiki/Dawki";
+                break;
+            case "Umiam Lake": 
+                detailLink="https://en.wikipedia.org/wiki/Umiam_Lake";
+                break;
+            case "Kynrem falls":
+                detailLink="https://en.wikipedia.org/wiki/Kynrem_Falls";
+                break;
+            case "Champhai": 
+                detailLink="https://en.wikipedia.org/wiki/Champhai";
+                break;
+            case "Reiek":
+                detailLink="https://en.wikipedia.org/wiki/Reiek";
+                break;
+            case "Lunglei": 
+                detailLink="https://en.wikipedia.org/wiki/Lunglei";
+                break;
+            case "Vantawng Falls":
+                detailLink="https://en.wikipedia.org/wiki/Vantawng_Falls";
+                break;
+            case "Tam Dil":
+                detailLink="https://en.wikipedia.org/wiki/Tam_Dil";
+                break;
+            case "Kohima":
+                detailLink="https://en.wikipedia.org/wiki/Kohima";
+                break;
+            case "Dimapur":
+                detailLink="https://en.wikipedia.org/wiki/Dimapur";
+                break;
+            case "Dzukou Valley": 
+                detailLink="https://en.wikipedia.org/wiki/Dz%C3%BCko_Valley";
+                break;
+            case "Touphema Village": 
+                detailLink="https://www.tourmyindia.com/states/nagaland/touphema-village.html";
+                break;
+            case "Kohima War Cemetery":     
+                detailLink="https://en.wikipedia.org/wiki/Kohima_War_Cemetery";
+                break;
+            case "Puri": 
+                detailLink="https://en.wikipedia.org/wiki/Puri";
+                break;
+            case "Konark Sun Temple":
+                detailLink="https://en.wikipedia.org/wiki/Konark_Sun_Temple";
+                break;
+            case "Bhubaneswar": 
+                detailLink="https://en.wikipedia.org/wiki/Bhubaneswar";
+                break;
+            case "Chilika Lake":
+                detailLink="https://en.wikipedia.org/wiki/Chilika_Lake";
+                break;
+            case "Raghurajpur Artist Village": 
+                detailLink="https://en.wikipedia.org/wiki/Raghurajpur";
+                break;
+            case "Auroville": 
+                detailLink="https://en.wikipedia.org/wiki/Auroville";
+                break;
+            case "Paradise Beach": 
+                detailLink="https://www.thrillophilia.com/attractions/paradise-beach";
+                break;
+            case "Arikamedu": 
+                detailLink="https://en.wikipedia.org/wiki/Arikamedu";
+                break;
+            case "Promenade Beach": 
+                detailLink="https://en.wikipedia.org/wiki/Promenade_Beach";
+                break;
+            case "Basilica of the Sacred Heart of Jesus":
+                detailLink="https://en.wikipedia.org/wiki/Basilica_of_the_Sacred_Heart_of_Jesus,_Pondicherry";
+                break;
+            case "Golden Temple": 
+                detailLink="https://en.wikipedia.org/wiki/Golden_Temple";
+                break;
+            case "Jallianwala Bagh":
+                detailLink="https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre";
+                break;
+            case "Wagah Border":
+                detailLink="https://en.wikipedia.org/wiki/Wagah";
+                break;
+            case "Anandpur Sahib":  
+                detailLink="https://en.wikipedia.org/wiki/Anandpur_Sahib";
+                break;
+            case "Mohali": 
+                detailLink="https://en.wikipedia.org/wiki/Mohali";
+                break;
+            case "Jaipur": 
+                detailLink="https://en.wikipedia.org/wiki/Jaipur";
+                break;
+            case "Udaipur": 
+                detailLink="https://en.wikipedia.org/wiki/Udaipur";
+                break;
+            case "Jaisalmer Fort": 
+                detailLink="https://en.wikipedia.org/wiki/Jaisalmer_Fort";
+                break;
+            case "Ajmer": 
+                detailLink="https://en.wikipedia.org/wiki/Ajmer";
+                break;
+            case "Kumbhalgarh Fort": 
+                detailLink="https://en.wikipedia.org/wiki/Kumbhalgarh";
+                break;
+            case "Gangtok": 
+                detailLink="https://en.wikipedia.org/wiki/Gangtok";
+                break;
+            case "Tsomgo Lake": 
+                detailLink="https://en.wikipedia.org/wiki/Lake_Tsomgo";
+                break;
+            case "Nathu La Pass": 
+                detailLink="https://en.wikipedia.org/wiki/Nathu_La";
+                break;
+            case "Rumtek Monastery": 
+                detailLink="https://en.wikipedia.org/wiki/Rumtek_Monastery";
+                break;
+            case "Pelling": 
+                detailLink="https://en.wikipedia.org/wiki/Pelling";
+                break;
+            case "Chennai":
+                detailLink="https://en.wikipedia.org/wiki/Chennai";
+                break;
+            case "Madurai": 
+                detailLink="https://en.wikipedia.org/wiki/Madurai";
+                break;
+            case "Coimbatore": 
+                detailLink="https://en.wikipedia.org/wiki/Coimbatore";
+                break;
+            case "Ooty": 
+                detailLink="https://en.wikipedia.org/wiki/Ooty";
+                break;
+            case "Kanyakumari": 
+                detailLink="https://en.wikipedia.org/wiki/Kanyakumari";
+                break;
+            case "Charminar": 
+                detailLink="https://en.wikipedia.org/wiki/Charminar";
+                break;
+            case "Birla Mandir":
+                detailLink="https://en.wikipedia.org/wiki/Birla_Mandir,_Hyderabad";
+                break;
+            case "Sri Chilkur Balaji Temple": 
+                detailLink="https://en.wikipedia.org/wiki/Chilkoor_Balaji_Temple";
+                break;
+            case "Salar Jang Museum":
+                detailLink="https://www.salarjungmuseum.in/";
+                break;
+            case "Golconda":
+                detailLink="https://en.wikipedia.org/wiki/Golconda";
+                break;
+            case "Unakoti": 
+                detailLink="https://en.wikipedia.org/wiki/Unakoti";
+                break;
+            case "Neer Mahal Palace": 
+                detailLink="https://en.wikipedia.org/wiki/Neermahal";
+                break;
+            case "Ujjayanta Palace": 
+                detailLink="https://en.wikipedia.org/wiki/Ujjayanta_Palace";
+                break;
+            case "Tripura Sundari Temple": 
+                detailLink="https://en.wikipedia.org/wiki/Tripura_Sundari_Temple";
+                break;
+            case "Jampui Hills": 
+                detailLink="https://en.wikipedia.org/wiki/Jampui_Hills";
+                break;
+            case "Dehradun": 
+                detailLink="https://en.wikipedia.org/wiki/Dehradun";
+                break;
+            case "Nainital": 
+                detailLink="https://en.wikipedia.org/wiki/Nainital";
+                break;
+            case "Rishikesh": 
+                detailLink="https://en.wikipedia.org/wiki/Rishikesh";
+                break;
+            case "Haridwar": 
+                detailLink="https://en.wikipedia.org/wiki/Haridwar";
+                break;
+            case "Kedarath": 
+                detailLink="https://badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx";
+                break;
+            case "Agra": 
+                detailLink="https://en.wikipedia.org/wiki/Agra";
+                break;
+            case "Fatehpur Sikri": 
+                detailLink="https://en.wikipedia.org/wiki/Fatehpur_Sikri";
+                break;
+            case "Varanasi": 
+                detailLink="https://en.wikipedia.org/wiki/Varanasi";
+                break;
+            case "Mathura": 
+                detailLink="https://en.wikipedia.org/wiki/Mathura";
+                break;
+            case "Vrindavan": 
+                detailLink="https://en.wikipedia.org/wiki/Vrindavan";
+                break;
+            case "Kolkata":
+                detailLink="https://en.wikipedia.org/wiki/Kolkata";
+                break;
+            case "Darjeeling": 
+                detailLink="https://en.wikipedia.org/wiki/Darjeeling";
+                break;
+            case "Shantiniketan": 
+                detailLink="https://en.wikipedia.org/wiki/Shantiniketan";
+                break;
+            case "Kalimpong": 
+                detailLink="https://en.wikipedia.org/wiki/Kalimpong";
+                break;
+            case "Sunderbans": 
+                detailLink="https://en.wikipedia.org/wiki/Sundarbans";
+                break;
+            default:
+                // If the detail doesn't have a specific link, set it to "#" (no link)
+                detailLink = "#";
+                break;
+        }
+
+        anchor.href = detailLink;
+        anchor.target = "_blank"; // Open link in a new tab
+        anchor.innerText = detail;
+        anchor.style.textDecoration = "none"; // Remove underline
+        listItem.appendChild(anchor);
+        listItem.style.cssText = "margin-bottom: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;";
+        imageContainer.appendChild(listItem);
+    });
+
+    imageContainer.innerHTML += "</ul>";
+} else {
+    // If details are not defined, show a message
+    imageContainer.innerHTML = "<p>Details not available.</p>";
+}
+        }
+    </script>
+</body>
+</html>

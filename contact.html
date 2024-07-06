@@ -6,79 +6,106 @@
     <title>Contact</title>
     <style>
         body {
-    font-family: Arial, sans-serif; /* Set a fallback font */
-    
-    background-image: url("src/india3.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
+            font-family: 'Times New Roman', Times, serif;
+            height: 800px;
+            background-image: url("src/india3.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center; /* Center the form horizontally */
+            align-items: center; /* Center the form vertically */
+        }
 
-}
+        .form-container {
+            width: 550px; 
+            margin: 50px auto; 
+            padding: 20px; 
+            background-color: #fff; 
+            border-radius: 3px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
 
-.form-container {
-    max-width: 450px; /* Set maximum width for the form container */
-    margin: 50px auto; /* Center the form horizontally */
-    padding: 20px; /* Add padding around the form */
-    background-color: #fff; /* White background for the form */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
+        h1 {
+            text-align: center; 
+            color: #333; 
+        }
 
-h1 {
-    text-align: center; /* Center-align the heading */
-    color: #333; /* Dark gray color */
-}
+        form {
+            text-align: left; 
+        }
 
-form {
-    text-align: left; /* Left-align the form elements */
-}
+        label {
+            font-weight: bold; 
+        }
 
-label {
-    font-weight: bold; /* Make labels bold */
-}
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 500px;
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 3px; 
+        }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width:400px;
-    padding: 10px; /* Add padding inside input fields */
-    margin-bottom: 15px; /* Add spacing between input fields */
-    border: 1px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Rounded corners */
-}
+        textarea {
+            height: 100px; 
+        }
 
-textarea {
-    height: 150px; /* Set height for the textarea */
-}
+        button {
+            width: 100%; 
+            padding: 10px; 
+            background-color: #007bff; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
 
-button {
-    width: 100%; /* Take up full width of the container */
-    padding: 10px; /* Add padding inside the button */
-    background-color: #007bff; /* Blue button color */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Add pointer cursor on hover */
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue color on hover */
-}
-
+        button:hover {
+            background-color: #0056b3; 
+        }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h1>Contact Us</h1>
-        <form>
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="name" placeholder="Enter Name"> <br> <br>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Enter Email"> <br> <br>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" placeholder="Message"></textarea> <br> <br>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <!-- Include the EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("eFElRgA9JAcXxt0re"); // Replace with your EmailJS user ID
+        })();
+    </script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send('service_pgwposx', 'template_ep1hiel', formData)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email sent successfully');
+            }, function(error) {
+                console.error('FAILED...', error);
+                alert('Failed to send email');
+            });
+        });
+    </script>
 </body>
 </html>

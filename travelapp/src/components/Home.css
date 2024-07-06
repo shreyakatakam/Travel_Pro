@@ -1,0 +1,187 @@
+/* Common body styles for the application */
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Container for the image grid */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space around items for better layout */
+}
+
+/* Styling for each image container */
+.imageContainer {
+  position: relative;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure the details container does not overflow the image container */
+  transition: transform 0.3s;
+  flex: 0 1 30%; /* Adjust flex-basis to allow three items per row */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Image styling inside the image container */
+.imageContainer img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px; /* Match the border-radius of the image container */
+}
+
+/* Styling for the title of the image */
+.imageContainer p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Scaling effect on hover for the image container */
+.imageContainer:hover {
+  transform: scale(1.05);
+}
+
+/* Details container styling */
+.detailsContainer {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px; /* Match the border-radius of the image container */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title styling inside the details container */
+.detailsContainer h2 {
+  margin-top: 0;
+}
+
+/* List styling inside the details container */
+.detailsContainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styling inside the details container */
+.detailsContainer li {
+  margin: 5px 0;
+}
+
+/* Link styling inside the details container */
+.detailsContainer a {
+  text-decoration: none;
+  color: blue;
+  pointer-events: auto; /* Enable pointer events on the links */
+}
+
+/* Hover effect for the links inside the details container */
+.detailsContainer a:hover {
+  text-decoration: underline;
+}
+header {
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Dark background color */
+  padding: 10px 0; /* Padding for the top and bottom */
+  z-index: 100; /* Ensure it's above other content */
+  text-align: center; /* Center-align the text */
+}
+
+header h1 {
+  margin: 0;
+  color: #fff; /* White color for the text */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+  vertical-align: top; /* Aligns the items to the top */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  margin-right: -1500px;
+  top:-20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* <div style={{ backgroundImage: `url(${indiaImage})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+<style>
+  {`
+    .container {
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h1 {
+      text-align: center;
+      color: #333;
+    }
+    .form-container form {
+      text-align: left;
+    }
+    .form-container label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container textarea {
+      width: 500px;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-container textarea {
+      height: 150px;
+      width:500px;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background-color: #0056b3;
+    }
+  `}
+</style> */
